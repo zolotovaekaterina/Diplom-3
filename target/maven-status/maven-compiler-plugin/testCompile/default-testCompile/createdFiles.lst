@@ -1,0 +1,10 @@
+PageObject/LogOffPOM.class
+Consts/Constants.class
+LoginFromOtherPlacesTest.class
+SelectorOfBrowser.class
+LoginIntoPrivateAccountTest.class
+PageObject/LoginPagePOM.class
+LogOffTest.class
+NavigateToIngredientsTest.class
+LoginPageTest.class
+PageObject/NavigationPOM.class

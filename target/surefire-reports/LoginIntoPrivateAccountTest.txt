@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: LoginIntoPrivateAccountTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 70.765 s <<< FAILURE! - in LoginIntoPrivateAccountTest
+navigationOnPrivateAccountCheck(LoginIntoPrivateAccountTest)  Time elapsed: 20.861 s  <<< FAILURE!
+java.lang.AssertionError
+	at LoginIntoPrivateAccountTest.navigationOnPrivateAccountCheck(LoginIntoPrivateAccountTest.java:29)
+
