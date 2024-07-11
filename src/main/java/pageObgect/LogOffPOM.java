@@ -1,10 +1,9 @@
-package PageObject;
+package pageObgect;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import io.qameta.allure.Step;
-import com.github.javafaker.Faker;
-import Consts.Constants;
+import consts.Constants;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,20 +11,20 @@ import java.time.Duration;
 
 public class LogOffPOM {
 
-    WebDriver driver;
+    public WebDriver driver;
 
     public LogOffPOM(WebDriver driver) {
         this.driver = driver;
     }
 
-    public static final By loginButton = By.xpath(".//*[@href=\"/account\"]");
-    public static final By exitButton = By.xpath(".//*[text()='Выход']");
-    public static final By name = By.xpath(".//*[@name=\"name\" and @class=\"text input__textfield text_type_main-default\" and @type=\"text\"][1]");
-    public static final By email = By.xpath(".//input[@class=\"text input__textfield text_type_main-default\" and @type=\"text\"]");
-    public static final By password = By.xpath(".//input[@class=\"text input__textfield text_type_main-default\" and @type=\"password\"]");
-    public static final By buttonLogin = By.xpath(".//*[text()='Войти']");
-    public static final By buttonLoginOnPersonalAccount = By.xpath(".//*[@class= 'AppHeader_header__link__3D_hX' and @href='/account']");
-    public static final By buttonAfterExit = By.xpath(".//*[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa']");
+    private static final By loginButton = By.xpath(".//*[@href=\"/account\"]");
+    private static final By exitButton = By.xpath(".//*[text()='Выход']");
+    private static final By name = By.xpath(".//*[@name=\"name\" and @class=\"text input__textfield text_type_main-default\" and @type=\"text\"][1]");
+    private static final By email = By.xpath(".//input[@class=\"text input__textfield text_type_main-default\" and @type=\"text\"]");
+    private static final By password = By.xpath(".//input[@class=\"text input__textfield text_type_main-default\" and @type=\"password\"]");
+    private static final By buttonLogin = By.xpath(".//*[text()='Войти']");
+    private static final By buttonLoginOnPersonalAccount = By.xpath(".//*[@class= 'AppHeader_header__link__3D_hX' and @href='/account']");
+    private static final By buttonAfterExit = By.xpath(".//*[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa']");
 
     @Step("Нажать на личный кабинет")
     public void clickOnLoginButton() {

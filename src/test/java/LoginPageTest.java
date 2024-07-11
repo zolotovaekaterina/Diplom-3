@@ -1,4 +1,4 @@
-import PageObject.LoginPagePOM;
+import pageObgect.LoginPagePOM;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
-import static Consts.Constants.URL;
+import static consts.Constants.URL;
 
 public class LoginPageTest {
 
@@ -28,8 +28,6 @@ public class LoginPageTest {
         element.fillRequiredParams();
         element.pressRegisterButton();
         Assert.assertTrue(element.loginButtonCheck());
-
-
     }
 
     @Test

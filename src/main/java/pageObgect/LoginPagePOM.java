@@ -1,7 +1,7 @@
-package PageObject;
+package pageObgect;
 
 import com.github.javafaker.Faker;
-import Consts.Constants;
+import consts.Constants;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -14,28 +14,28 @@ import java.time.Duration;
 
 public class LoginPagePOM {
 
-    WebDriver driver;
+    public WebDriver driver;
 
     public LoginPagePOM(WebDriver driver) {
         this.driver = driver;
     }
 
-    public static final By loginButton = By.xpath(".//*[@href=\"/account\"]");
-    public static final By registerButton = By.xpath(".//*[@href=\"/register\"]");
-    public static final By name = By.xpath(".//*[@name=\"name\" and @class=\"text input__textfield text_type_main-default\" and @type=\"text\"][1]");
-    public static final By email = By.xpath(".//input[@class=\"text input__textfield text_type_main-default\" and @type=\"text\"]");
-    public static final By password = By.xpath(".//input[@class=\"text input__textfield text_type_main-default\" and @type=\"password\"]");
-    public static final By registerButtonOnRegisterPage = By.xpath(".//*[text()=\"Зарегистрироваться\"]");
-    public static final By wrongPasswordMessage = By.xpath(".//*[text()=\"Некорректный пароль\"]");
-    public static final By buttonLogin = By.xpath(".//*[text()='Войти']");
-    public static final By buttonLoginOnPersonalAccount = By.xpath(".//*[@class= 'AppHeader_header__link__3D_hX' and @href='/account']");
-    public static final By textFromPrivateAccount = By.xpath(".//*[@class='Auth_login__3hAey']");
-    public static final By logo = By.xpath(".//*[@class='AppHeader_header__logo__2D0X2']/a");
-    public static final By createOrderButton = By.xpath(".//button[text()='Оформить заказ']");
-    public static final By createOfBurgerButton =  By.xpath(".//*[@class='AppHeader_header__link__3D_hX']");
-    public static final By loginOnMainPage = By.xpath(".//*[text()='Войти в аккаунт']");
-    public static final By buttonResetYourPassword = By.xpath(".//*[@class=\"Auth_link__1fOlj\" and @href=\"/forgot-password\"]");
-    public static final By loginButtonInResetPassword = By.xpath(".//*[text()='Войти']");
+    private static final By loginButton = By.xpath(".//*[@href=\"/account\"]");
+    private static final By registerButton = By.xpath(".//*[@href=\"/register\"]");
+    private static final By name = By.xpath(".//*[@name=\"name\" and @class=\"text input__textfield text_type_main-default\" and @type=\"text\"][1]");
+    private static final By email = By.xpath(".//input[@class=\"text input__textfield text_type_main-default\" and @type=\"text\"]");
+    private static final By password = By.xpath(".//input[@class=\"text input__textfield text_type_main-default\" and @type=\"password\"]");
+    private static final By registerButtonOnRegisterPage = By.xpath(".//*[text()=\"Зарегистрироваться\"]");
+    private static final By wrongPasswordMessage = By.xpath(".//*[text()=\"Некорректный пароль\"]");
+    private static final By buttonLogin = By.xpath(".//*[text()='Войти']");
+    private static final By buttonLoginOnPersonalAccount = By.xpath(".//*[@class= 'AppHeader_header__link__3D_hX' and @href='/account']");
+    private static final By textFromPrivateAccount = By.xpath(".//*[@class='Auth_login__3hAey']");
+    private static final By logo = By.xpath(".//*[@class='AppHeader_header__logo__2D0X2']/a");
+    private static final By createOrderButton = By.xpath(".//button[text()='Оформить заказ']");
+    private static final By createOfBurgerButton =  By.xpath(".//*[@class='AppHeader_header__link__3D_hX']");
+    private static final By loginOnMainPage = By.xpath(".//*[text()='Войти в аккаунт']");
+    private static final By buttonResetYourPassword = By.xpath(".//*[@class=\"Auth_link__1fOlj\" and @href=\"/forgot-password\"]");
+    private static final By loginButtonInResetPassword = By.xpath(".//*[text()='Войти']");
 
     @Step("Нажать на личный кабинет")
     public void clickOnLoginButton() {

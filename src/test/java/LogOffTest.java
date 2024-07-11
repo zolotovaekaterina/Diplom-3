@@ -1,4 +1,4 @@
-import PageObject.LogOffPOM;
+import pageObgect.LogOffPOM;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
@@ -7,7 +7,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
 
-import static Consts.Constants.URL;
+import static consts.Constants.URL;
 
 public class LogOffTest {
 

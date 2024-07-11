@@ -1,4 +1,4 @@
-package Consts;
+package consts;
 
 import com.github.javafaker.Faker;
 
