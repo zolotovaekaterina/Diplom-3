@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: LoginFromOtherPlacesTest
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 54.943 s - in LoginFromOtherPlacesTest
